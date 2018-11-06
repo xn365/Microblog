@@ -1,0 +1,126 @@
+2018-11-02 11:12:03,650 INFO: Microblog startup [in /home/tia/flask/tutorial/Microblog/app/__init__.py:78]
+2018-11-02 11:12:17,262 INFO: Microblog startup [in /home/tia/flask/tutorial/Microblog/app/__init__.py:78]
+2018-11-02 15:06:29,924 INFO: Microblog startup [in /home/tia/flask/tutorial/Microblog/app/__init__.py:78]
+2018-11-02 15:15:19,020 INFO: Microblog startup [in /home/tia/flask/tutorial/Microblog/app/__init__.py:78]
+2018-11-02 15:15:26,234 INFO: Microblog startup [in /home/tia/flask/tutorial/Microblog/app/__init__.py:78]
+2018-11-02 15:38:30,984 INFO: Microblog startup [in /home/tia/flask/tutorial/Microblog/app/__init__.py:78]
+2018-11-02 15:38:50,963 ERROR: Exception on /messages [GET] [in /home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/tia/flask/tutorial/Microblog/app/main/routes.py", line 181, in messages
+    messages = current_user.messages_received.order_by(Message.timestamp.desc()).paginate(
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'User' object has no attribute 'messages_received'
+2018-11-02 15:41:05,111 INFO: Microblog startup [in /home/tia/flask/tutorial/Microblog/app/__init__.py:78]
+2018-11-04 12:05:36,984 INFO: Microblog startup [in /home/tia/flask/tutorial/Microblog/app/__init__.py:78]
+2018-11-04 12:53:11,809 INFO: Microblog startup [in /home/tia/flask/tutorial/Microblog/app/__init__.py:78]
+2018-11-04 12:53:18,724 INFO: Microblog startup [in /home/tia/flask/tutorial/Microblog/app/__init__.py:78]
+2018-11-05 16:15:34,737 INFO: Microblog startup [in /home/tia/flask/tutorial/Microblog/app/__init__.py:83]
+2018-11-05 16:15:53,067 INFO: Microblog startup [in /home/tia/flask/tutorial/Microblog/app/__init__.py:83]
+2018-11-05 16:17:18,586 INFO: Microblog startup [in /home/tia/flask/tutorial/Microblog/app/__init__.py:83]
+2018-11-05 16:17:29,681 INFO: Microblog startup [in /home/tia/flask/tutorial/Microblog/app/__init__.py:83]
+2018-11-05 16:17:42,629 ERROR: Exception on / [GET] [in /home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/tia/flask/tutorial/Microblog/app/main/routes.py", line 49, in index
+    prev_url=prev_url)
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/tia/flask/tutorial/Microblog/app/templates/index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "/home/tia/flask/tutorial/Microblog/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
+    {%- block html %}
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
+    {% block body -%}
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
+    {% block content -%}
+  File "/home/tia/flask/tutorial/Microblog/app/templates/base.html", line 56, in block "content"
+    {% if current_user.is_authenticated %}
+TypeError: get_tasks_in_progress() missing 1 required positional argument: 'name'
+2018-11-05 16:28:03,560 ERROR: Exception on / [GET] [in /home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/tia/flask/tutorial/Microblog/app/main/routes.py", line 49, in index
+    prev_url=prev_url)
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/tia/flask/tutorial/Microblog/app/templates/index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "/home/tia/flask/tutorial/Microblog/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
+    {%- block html %}
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
+    {% block body -%}
+  File "/home/tia/anaconda3/envs/flask/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
+    {% block content -%}
+  File "/home/tia/flask/tutorial/Microblog/app/templates/base.html", line 56, in block "content"
+    {% if current_user.is_authenticated %}
+TypeError: get_tasks_in_progress() missing 1 required positional argument: 'name'
+2018-11-05 16:28:09,470 INFO: Microblog startup [in /home/tia/flask/tutorial/Microblog/app/__init__.py:83]

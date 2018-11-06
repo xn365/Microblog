@@ -142,7 +142,7 @@ class User(UserMixin, db.Model):
         db.session.add(n)
         return n
 
-    def launch_task(self, name, description, *args, **kwargs):
+    def launch_task(self, name, description, *args, **kwars):
         rq_job = current_app.task_queue.enqueue('app.tasks.' + name, 
                                                 self.id,
                                                 *args,
@@ -152,8 +152,8 @@ class User(UserMixin, db.Model):
         db.session.add(task)
         return task
 
-    def get_tasks_in_progress(self):
-        return Task.query.filter_by(user=self, complete=False).all()
+    def get_tasks_in_progress(self, name):
+        return Task.query.filter_by(name=name, user=self, complete=False).first()
 
     def get_task_in_progress(self, name):
         return Task.query.filter_by(name=name, user=self,
